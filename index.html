@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do list</title>
+  </head>
+  <body>
+    <main>
+      <section class="glass-container">
+        <div class="left-dashboard">
+          <div class="name">
+            <form class="js-form form">
+              <input type="text" placeholder="What is your name?" />
+            </form>
+            <h1 class="js-greetings greetings">
+              Hello,<br />
+              Someone
+            </h1>
+          </div>
+          <div class="clock">
+            <h2>Current Time</h2>
+            <div class="js-clock">
+              <h1>00:00</h1>
+            </div>
+          </div>
+          <div class="weather">
+            <h2>Today's Weather</h2>
+            <div class="weather-content">
+              <img class="weather-icon" src="" alt="" />
+              <span class="weather-text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="right-dashboard">
+          <h1>TODO LIST</h1>
+          <div class="add">
+            <input type="text" class="input" placeholder="What is your plan?" />
+            <button class="btn">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="todo-card">
+            <ul class="todo-list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <i id="icon" class="far fa-sun"></i>
+    <script src="greeting.js"></script>
+    <script src="clock.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
